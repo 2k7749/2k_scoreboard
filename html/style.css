@@ -1,0 +1,253 @@
+@font-face {
+	font-family: "FS Harabara";
+	src: url("./FSHarabara.ttf");
+  }
+body {
+    color: white;
+    font-family: "FS Harabara", serif;
+}
+
+.topbar,
+.main-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.pname,
+.servername,
+.navbar,
+.main-content {
+    position: relative;
+}
+
+.pname{
+	background:#42c58a;
+	color:#fff;
+	padding:5px 12px;
+	height:25px;
+}
+
+.main {
+	font-family: "FS Harabara", serif;
+	font-size:20px;
+    position: fixed;
+    #background-color: rgba(0, 0, 0, 0.5);
+    height: 80%;
+    width: 75%;
+    margin-top: 4%;
+    margin-left: 12.5%;
+}
+
+.topbar {
+    height: 7.5%;
+    width: 100%;
+    text-align: center;
+}
+
+.me {
+    background-image: url(https://i.imgur.com/DJ1CY64.jpg);
+	background-repeat: no-repeat;
+    background-position: 0px 0px;
+	background-size: cover;
+    left: 0px;
+    height: 96px;
+    width: 25%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+.pfp {
+    float: left;
+}
+
+.pinfo {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 3vh;
+    clear: right;
+}
+
+.pgroup {
+	background:#DC143C;
+	color:#fff;
+	padding:5px 12px;
+	height:25px;
+	margin-bottom:25px;
+	display:inline-block;
+    text-transform: capitalize;
+}
+
+.servername {
+    font-size: 20pt;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 5px 10px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    left: 0px;
+    width: 25%;
+    height: calc(100% - 96px - 7.5%);
+    clear: left;
+    float: left;
+}
+
+.main-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: calc(100% - 7.5%);
+    width: calc(85% - 25%);
+    margin-top: -96px;
+    overflow: scroll;
+	overflow: hidden;
+}
+
+table {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+th {
+    font-size: 20px;
+    height: 50px;
+}
+
+td {
+    padding: 10px;
+    background-color: rgba(100, 100, 100, .5);
+}
+
+td:nth-child(2n) {
+    background-color: rgba(200, 200, 200, .6);
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+    text-transform: capitalize;
+}
+
+.copied {
+    position: absolute;
+    width: 25%;
+    background-color: rgba(0, 255, 161, 0.9);
+    color: black;
+    padding: 15px;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -12.5%;
+}
+
+.navbtn {
+    text-align: center;
+    #border: 1px solid gray;
+    padding: 15px;
+}
+
+.navbtn:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+    transition: all 0.5s;
+}
+
+.navbtn:active {
+    background-color: rgba(251, 255, 0, 0.8);
+    transition: all 0.1s;
+}
+
+.navbtn.selected {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+.player-context {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    width: 325px;
+    height: auto;
+}
+
+.pl-ctx-btn {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+.pl-ctx-btn:hover {
+    background-color: rgba(100, 100, 100, 0.75);
+    transition: all 0.5s;
+}
+
+#input-form {
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    width: 20%;
+    height: 15%;
+}
+
+.input-description {
+    position: relative;
+    top: 15px;
+    font-size: 18pt;
+}
+
+.input-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #777;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.input-close:hover {
+    transition: color 0.7s;
+    color: red;
+}
+
+.input-close::after {
+    content: "✖";
+}
+
+#input-content {
+    margin-top: 2.4vh;
+    width: 90%;
+    padding: 6px;
+    border: 2px solid #666;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#input-content:active {
+    transition: border-color 0.7s;
+    border-color: #004bbb;
+}
+
+.input-confirm {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.input-confirm:hover {
+    transition: all 0.4s;
+    background-color: white;
+    color: black;
+}
